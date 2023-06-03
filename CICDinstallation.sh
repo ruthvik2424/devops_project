@@ -39,6 +39,8 @@ kubectl create namespace argocd
 echo "Installing argocd on minikube cluster........."
 sleep 1
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+echo "Waiting for 20 sec for argocd installation"
+sleep 20
 echo "Extracting the Initial admin-password for login (copy karlo)"
 sleep 1
 argocd admin initial-password -n argocd
