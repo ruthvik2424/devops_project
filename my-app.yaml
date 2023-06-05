@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: git@github.com/ruthvik2424/devops_project.git
     targetRevision: HEAD
-    path: my-app.yaml
+    path: pro
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
