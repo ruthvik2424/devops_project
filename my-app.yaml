@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-app
-  namespace: argocd
+  namespace: my-app
   annotations:
     argocd-image-updater.argoproj.io/auto-create: "true"
     argocd-image-updater.argoproj.io/auto-update: "true"
