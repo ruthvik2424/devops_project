@@ -11,12 +11,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:ruthvik2424/devops_project.git
+    repoURL: https://github.com:ruthvik2424/devops_project.git
     targetRevision: HEAD
     path: pro
   destination: 
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: argocd
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
