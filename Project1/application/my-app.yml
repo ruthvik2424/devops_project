@@ -4,12 +4,7 @@ metadata:
   name: my-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/auto-create: "true"
-    argocd-image-updater.argoproj.io/auto-update: "true"
-    argocd-image-updater.argoproj.io/image-list: example=docker.io/ruthvik2424/demoproject
-    argocd-image-updater.argoproj.io/example.update-strategy: latest
-  finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    argocd-image-updater.argoproj.io/image-list: docker.io/ruthvik2424/demoproject:~1
 spec:
   project: default
   source:
