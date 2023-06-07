@@ -5,9 +5,7 @@ metadata:
 spec:
   selector:
     app: jenkins-blueocean
-  type: LoadBalancer  
   ports:
     - protocol: TCP
       port: 2000
       targetPort: 8080
-      nodePort: 31400
