@@ -6,6 +6,8 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/auto-create: "true"
     argocd-image-updater.argoproj.io/auto-update: "true"
+    argocd-image-updater.argoproj.io/image-list: example=docker.io/ruthvik2424/demoproject
+    argocd-image-updater.argoproj.io/example.update-strategy: latest
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -13,7 +15,7 @@ spec:
   source:
     repoURL: https://github.com:ruthvik2424/devops_project.git
     targetRevision: HEAD
-    path: pro
+    path: ./Project1/config-files
   destination: 
     server: https://kubernetes.default.svc
     namespace: my-app
