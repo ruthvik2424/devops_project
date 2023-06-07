@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-app
-  namespace: my-app
+  namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/auto-create: "true"
     argocd-image-updater.argoproj.io/auto-update: "true"
@@ -16,7 +16,7 @@ spec:
     path: pro
   destination: 
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: my-app
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
