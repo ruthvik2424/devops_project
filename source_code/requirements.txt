@@ -1,0 +1,10 @@
+librosa
+numpy 
+keras.models 
+flask 
+flask_restful
+librosa
+pandas 
+joblib
+matplotlib
+tensorflow
