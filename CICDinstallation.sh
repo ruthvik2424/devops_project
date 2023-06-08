@@ -1,13 +1,10 @@
 #!/bin/bash
 echo "This is the file for installation of tools of CICD Pipeline (Jenkins,minikube,kubectl,argocd)"
 sleep 2
-echo "Please ensure that the user running the script has sudo permissions and this script is designed for CentOS and RHEL Only"
-sleep 2
-echo "First Installation is of Jenkins requires some tools to be installed"
+echo "Please ensure that the user running the script has sudo permissions and this script is design for Rhel and CentOS OS"
 sleep 1
 sudo yum update
 sleep 1
-echo "Need of Container Technology....."
 sleep 1
 sudo yum install -y podman
 echo "Now lets install minikube for readytodeploy cluster for (x86_64 if your architecture is different refer offical documentation)"
@@ -26,8 +23,7 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 echo "validating the binary...."
 sleep 1
 curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
-echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
-echo "output is okk good to install"
+echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check"
 sleep 1
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 echo "lets check its installed properly or not (fingers crossed)"
