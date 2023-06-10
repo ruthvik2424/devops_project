@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - docker.io/ruthvik2424/demoproject:1.5.0
+  - docker.io/ruthvik2424/demoproject:1.6.0
