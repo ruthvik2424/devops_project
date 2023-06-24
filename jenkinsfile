@@ -1,0 +1,11 @@
+pipeline {
+  agent any
+  stages {
+    stage('Build The Docker Image') {
+      steps {
+        sh 'podman build -t docker.io/ruthvik2424/demoproject:1.7.0 .'
+        sh 'podman push docker.io/ruthvik2424/demoproject:1.7.0'
+      }
+    }
+  }
+}
