@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - docker.io/ruthvik2424/demoproject:v1
