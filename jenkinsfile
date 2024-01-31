@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'cd source_code'
         sh 'docker build -t  docker.io/ruthvik2424/demoproject:1.2.0 ./source_code/'
-        sh 'docker push docker.io/ruthvik2424/demoproject:1.2.0'
+        sh 'sudo docker push docker.io/ruthvik2424/demoproject:1.2.0'
       }
     }
   }
